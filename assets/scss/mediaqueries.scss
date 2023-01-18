@@ -177,7 +177,6 @@
     #popup {
         width: 90vw;
         left: 5vw;
-        display: block;
         padding: 5vh 5vw;
 
         p {
@@ -231,10 +230,20 @@
 
     #logo {
         padding: 3vh 5vw;
-        grid-template-columns: 30px 1fr;
+
+        h3 {
+            font-size: 0.8rem;
+            line-height: 0.8rem;
+        }
+
+        p {
+            font-size: 0.5rem;
+            line-height: 0.5rem;
+        }
 
         img {
-            padding: 0.2vh;
+            top: 3.2vh;
+            left: 1vw;
         }
     }
     
@@ -244,7 +253,7 @@
     }
 
     #title {
-        margin: 10ch 0 0 5vw;
+        margin: 5vh 0 0 5vw;
         width: 60vw;
 
         h4 {
@@ -366,7 +375,7 @@
         h3 {
             font-size: 0.8rem;
         }
-        
+
         p {
             font-size: 0.6rem;
             margin: 3vh 0 5vh 0;

@@ -457,7 +457,6 @@ footer #credits::after {
   #popup {
     width: 90vw;
     left: 5vw;
-    display: block;
     padding: 5vh 5vw;
   }
   #popup p {
@@ -500,17 +499,25 @@ footer #credits::after {
   }
   #logo {
     padding: 3vh 5vw;
-    grid-template-columns: 30px 1fr;
+  }
+  #logo h3 {
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+  }
+  #logo p {
+    font-size: 0.5rem;
+    line-height: 0.5rem;
   }
   #logo img {
-    padding: 0.2vh;
+    top: 3.2vh;
+    left: 1vw;
   }
   #floatingMan {
     top: 0;
     height: 20vh;
   }
   #title {
-    margin: 10ch 0 0 5vw;
+    margin: 5vh 0 0 5vw;
     width: 60vw;
   }
   #title h4 {
