@@ -177,6 +177,16 @@
     #popup {
         width: 90vw;
         left: 5vw;
+        display: block;
+        padding: 5vh 5vw;
+
+        p {
+            margin: 3vh 0 5vh 0;
+        }
+    
+        p:first-of-type {
+            margin: 0 0 3vh 0;
+        }
     }
 }
 
@@ -353,7 +363,18 @@
     }    
 
     #popup {
-        width: 90vw;
-        left: 5vw;
+        h3 {
+            font-size: 0.8rem;
+        }
+        
+        p {
+            font-size: 0.6rem;
+            margin: 3vh 0 5vh 0;
+        }
+
+        a {
+            font-size: 0.8rem;
+        }
+    
     }
 }

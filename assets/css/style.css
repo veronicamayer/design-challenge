@@ -66,24 +66,22 @@ header {
 }
 
 #logo {
-  display: grid;
-  grid-template-columns: 50px 1fr;
   padding: 5vh 2vw;
-  align-items: center;
 }
 #logo img {
-  grid-row: 1/3;
-  padding-bottom: 1vh;
+  position: fixed;
+  top: 4vh;
+  left: 1vw;
 }
 #logo h3 {
   line-height: 1rem;
+  padding-left: 3vw;
 }
 #logo p {
-  grid-column: 2/3;
   font-size: 0.8rem;
-  padding-left: 4px;
   font-family: "Roboto bold";
   line-height: 1rem;
+  padding: 4px 0 0 calc(3vw + 4px);
 }
 
 #floatingMan {
@@ -262,12 +260,16 @@ footer form .email {
 footer form .submit {
   width: 15vw;
   height: 8vh;
-  background-color: #f73572;
+  background: linear-gradient(90deg, #f73572, transparent) #f73572;
   border: none;
   border-radius: 5px;
   color: white;
   font-size: 1.1rem;
   margin-bottom: 20vh;
+}
+footer form .submit:hover, footer form .submit:focus {
+  background-color: #3C30FF;
+  transition: background-color 1s;
 }
 footer #credits {
   font-size: 1rem;
@@ -291,20 +293,20 @@ footer #credits::after {
   display: none;
   box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.1);
   position: absolute;
-  top: 30%;
+  top: 0;
   left: 20%;
   z-index: 1;
   text-align: center;
-  padding: 5vh 5vw;
+  padding: 10vh 5vw;
 }
 #popup p {
   font-size: 0.8rem;
   line-height: 1rem;
-  margin: 3vh 0 5vh 0;
+  margin: 3vh 0 10vh 0;
 }
 #popup p:first-of-type {
   font-size: 2rem;
-  margin: 0 0 2vh 0;
+  margin: 0 0 5vh 0;
 }
 #popup a {
   background-color: #4c0bbc;
@@ -455,6 +457,14 @@ footer #credits::after {
   #popup {
     width: 90vw;
     left: 5vw;
+    display: block;
+    padding: 5vh 5vw;
+  }
+  #popup p {
+    margin: 3vh 0 5vh 0;
+  }
+  #popup p:first-of-type {
+    margin: 0 0 3vh 0;
   }
 }
 @media screen and (max-width: 430px) {
@@ -592,9 +602,15 @@ footer #credits::after {
     height: 10px;
     padding: 0;
   }
-  #popup {
-    width: 90vw;
-    left: 5vw;
+  #popup h3 {
+    font-size: 0.8rem;
+  }
+  #popup p {
+    font-size: 0.6rem;
+    margin: 3vh 0 5vh 0;
+  }
+  #popup a {
+    font-size: 0.8rem;
   }
 }
 
