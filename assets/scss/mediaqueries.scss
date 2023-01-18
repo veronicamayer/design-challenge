@@ -1,66 +1,101 @@
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 830px) {
     h1 {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     h3 {
-        line-height: 1.2rem;
-        font-size: 1rem;
-        }
+        line-height: 1.7rem;
+        font-size: 1.25rem;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+    }
 
     p {
-        font-size: 0.8rem;
-        line-height: 1.2rem;
+        font-size: 1rem;
+        line-height: 1.7rem;
     }
 
     .smallIcons {
-        width: 20px;
-        height: 20px;
-        object-fit: contain;
-    }
-    
-    .largeIcons {
-        width: 30px;
+        width: 40px;
         height: 30px;
         object-fit: contain;
     }
     
+    .largeIcons {
+        width: 45px;
+        height: 45px;
+        object-fit: contain;
+    }
 
     header {
         height: auto;
     }
+
+    #logo {
+        padding: 4vh 5vw;
+        grid-template-columns: 50px 1fr;
+
+        img {
+            padding-bottom: 0.2vh;
+        }
+    }
     
     #floatingMan {
-        top: 0;
-        height: 30vh;
+        top: 5vh;
+        height: 25vh;
     }
 
     #title {
-        margin: 10ch 0 0 5vw;
+        margin: 5vh 0 0 5vw;
         width: 60vw;
+
+        h1 {
+            margin-bottom: 5vh;
+        }    
 
         h4 {
             margin-bottom: 5vh;
         }
+
+        a {
+            font-size: 0.8rem;
+        }
     }
 
     #ideaSection {
-        margin: 10vh 10vw 10vh 10vw;
+        display: block;
+        margin: 10vh 5vw 10vh 5vw;
+
+        h2 {
+            margin-bottom: 3vh;
+        }
+
+        h2:nth-of-type(2) {
+            width: 70vw;
+        }
 
         p {
-            margin: 0 0 10vh 2vw;
+            margin: 0 0 10vh 0;
         }
     }
 
     #tableWithIcons {
-        margin: 0 10vw 10vh calc(10vw + 50px);
+        display: block;
+        margin: 0 0 10vh 0;
 
-        article {
-            padding-bottom: 5vh;
+        article:nth-of-type(odd), article:nth-of-type(even) {
+            width: 100%;
+            padding: 0 3vw 3vh calc(5vw + 50px);
+        }
+
+        article:nth-of-type(1)::before, article:nth-of-type(2)::before, article:nth-of-type(3)::before, article:nth-of-type(4)::before {
+            left: 5vw;
         }
     }
 
@@ -80,24 +115,69 @@
         margin: 10vh 5vw 10vh 5vw;
 
         article {
+            flex-direction: column;
+            align-items: center;
             margin-bottom: 10vh;
+            text-align: center;
+
+            .imgTextSectionImg {
+                width: 60%;
+                margin-bottom: 3vh;
+            }    
 
             div {
+                display: block;
+                margin: 0;
+
                 p:first-of-type {
                     margin: 3vh 0;
                 }
 
                 img {
-                    margin-bottom: 2vh;
+                    margin-bottom: 1vh;
                 }
     
                 h3 {
                     margin-bottom: 1vh;
                 }
-    
             }
         }
+
+        article:nth-of-type(even) {
+            flex-direction: column;
+        }
+    }
+    footer {
+        form .email {
+            width: 70vw;
+            height: 6vh;
+            font-size: 1rem;
+            margin: 4vh auto;
+        }
+
+        form .submit {
+            width: 50vw;
+            height: 4vh;
+            font-size: 0.8rem;
+            margin-bottom: 7vh;
+        }
+
+        #credits {
+            font-size: 0.6rem;
+            margin: 0 0 2vh 5vw;
+        }
+
+        #credits::after {
+            width: 20px;
+            height: 10px;
+            padding: 0;
+        }
     }    
+
+    #popup {
+        width: 90vw;
+        left: 5vw;
+    }
 }
 
 @media screen and (max-width: 430px) {
