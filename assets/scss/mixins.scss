@@ -1,0 +1,11 @@
+@mixin tableWithIconsPosition($url, $left) {
+    background-image: url($url);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: $left;
+}

@@ -1,0 +1,275 @@
+@media screen and (max-width: 850px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        line-height: 1.2rem;
+        font-size: 1rem;
+        }
+
+    p {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+
+    .smallIcons {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+    }
+    
+    .largeIcons {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+    }
+    
+
+    header {
+        height: auto;
+    }
+    
+    #floatingMan {
+        top: 0;
+        height: 30vh;
+    }
+
+    #title {
+        margin: 10ch 0 0 5vw;
+        width: 60vw;
+
+        h4 {
+            margin-bottom: 5vh;
+        }
+    }
+
+    #ideaSection {
+        margin: 10vh 10vw 10vh 10vw;
+
+        p {
+            margin: 0 0 10vh 2vw;
+        }
+    }
+
+    #tableWithIcons {
+        margin: 0 10vw 10vh calc(10vw + 50px);
+
+        article {
+            padding-bottom: 5vh;
+        }
+    }
+
+    #readySection, .alignCenter{
+        width: 70vw;
+
+        h2 {
+            margin-bottom: 3vh;
+        }
+    
+        p {
+            font-size: 1rem;
+        }    
+    }
+
+    #imgTextSection {
+        margin: 10vh 5vw 10vh 5vw;
+
+        article {
+            margin-bottom: 10vh;
+
+            div {
+                p:first-of-type {
+                    margin: 3vh 0;
+                }
+
+                img {
+                    margin-bottom: 2vh;
+                }
+    
+                h3 {
+                    margin-bottom: 1vh;
+                }
+    
+            }
+        }
+    }    
+}
+
+@media screen and (max-width: 430px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        line-height: 1.2rem;
+        font-size: 1rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+
+    .smallIcons {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+    }
+    
+    .largeIcons {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+    }
+
+    header {
+        height: auto;
+    }
+
+    #logo {
+        padding: 3vh 5vw;
+        grid-template-columns: 30px 1fr;
+
+        img {
+            padding: 0.2vh;
+        }
+    }
+    
+    #floatingMan {
+        top: 0;
+        height: 20vh;
+    }
+
+    #title {
+        margin: 10ch 0 0 5vw;
+        width: 60vw;
+
+        h4 {
+            margin-bottom: 5vh;
+        }
+
+        a {
+            font-size: 0.8rem;
+        }
+    }
+
+    #ideaSection {
+        display: block;
+        margin: 10vh 5vw 10vh 5vw;
+
+        h2 {
+            margin-bottom: 3vh;
+        }
+
+        h2:nth-of-type(2) {
+            width: 70vw;
+        }
+
+        p {
+            margin: 0 0 10vh 0;
+        }
+    }
+
+    #tableWithIcons {
+        display: block;
+        margin: 0 0 10vh 0;
+
+        article:nth-of-type(odd), article:nth-of-type(even) {
+            width: 100%;
+            padding: 0 3vw 3vh calc(5vw + 50px);
+        }
+
+        article:nth-of-type(1)::before, article:nth-of-type(2)::before, article:nth-of-type(3)::before, article:nth-of-type(4)::before {
+            left: 5vw;
+        }
+    }
+
+    #readySection, .alignCenter{
+        width: 70vw;
+
+        h2 {
+            margin-bottom: 3vh;
+        }
+    
+        p {
+            font-size: 1rem;
+        }    
+    }
+
+    #imgTextSection {
+        margin: 10vh 5vw 10vh 5vw;
+
+        article {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 10vh;
+            text-align: center;
+
+            .imgTextSectionImg {
+                width: 60%;
+                margin-bottom: 3vh;
+            }    
+
+            div {
+                display: block;
+                margin: 0;
+
+                p:first-of-type {
+                    margin: 3vh 0;
+                }
+
+                img {
+                    margin-bottom: 1vh;
+                }
+    
+                h3 {
+                    margin-bottom: 1vh;
+                }
+            }
+        }
+
+        article:nth-of-type(even) {
+            flex-direction: column;
+        }
+    }
+    footer {
+        form .email {
+            width: 70vw;
+            height: 6vh;
+            font-size: 1rem;
+            margin: 4vh auto;
+        }
+
+        form .submit {
+            width: 50vw;
+            height: 4vh;
+            font-size: 0.8rem;
+            margin-bottom: 7vh;
+        }
+
+        #credits {
+            font-size: 0.6rem;
+            margin: 0 0 2vh 5vw;
+        }
+
+        #credits::after {
+            width: 20px;
+            height: 10px;
+            padding: 0;
+        }
+
+    }    
+}

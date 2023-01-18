@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Roboto regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto bold;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: Roboto light;
+    src: url(../fonts/Roboto-Light.ttf);
+}
+
+$fontFamily: 'Roboto regular';
+$fontFamilyBold: 'Roboto bold';
+$fontFamilyLight: 'Roboto light';
+$accentColor: #f73572;
