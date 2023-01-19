@@ -22,15 +22,11 @@
     }
 
     .smallIcons {
-        width: 40px;
-        height: 30px;
-        object-fit: contain;
+        @include mixins.imageStyles (40px, 30px, contain);
     }
     
     .largeIcons {
-        width: 45px;
-        height: 45px;
-        object-fit: contain;
+        @include mixins.imageStyles (45px, 45px, contain);
     }
 
     header {
@@ -213,15 +209,11 @@
     }
 
     .smallIcons {
-        width: 30px;
-        height: 20px;
-        object-fit: contain;
+        @include mixins.imageStyles (30px, 20px, contain);
     }
     
     .largeIcons {
-        width: 30px;
-        height: 30px;
-        object-fit: contain;
+        @include mixins.imageStyles (30px, 30px, contain);
     }
 
     header {

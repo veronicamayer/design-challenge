@@ -10,24 +10,19 @@
 }
 
 h1 {
-    font-size: 5rem;
-    font-family: variables.$fontFamilyBold;
+    @include mixins.fontStyles (variables.$fontFamilyBold, 5rem, auto);
 }
 
 h2 {
-    font-size: 3.5rem;
-    font-family: variables.$fontFamilyBold;
+    @include mixins.fontStyles (variables.$fontFamilyBold, 3.5rem, auto);
 }
 
 h3 {
-    font-family: variables.$fontFamilyBold;
-    line-height: 2.2rem;
-    font-size: 1.5rem;
+    @include mixins.fontStyles (variables.$fontFamilyBold, 1.5rem, 2.2rem);
 }
 
 h4 {
-    font-size: 1.5rem;
-    font-family: variables.$fontFamilyLight;
+    @include mixins.fontStyles (variables.$fontFamilyLight, 1.5rem, auto);
 }
 
 p {
@@ -37,23 +32,16 @@ p {
 }
 
 .smallIcons {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
+    @include mixins.imageStyles (40px, 40px, contain);
 }
 
 .largeIcons {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
+    @include mixins.imageStyles (60px, 60px, contain);
 }
 
 /* Image on the top right corner */
 header {
-    background-image: url("../img/ilustracion1.png");
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: top right;
+    @include mixins.backgroundImage ("../img/ilustracion1.png", no-repeat, 50%, top right);
     margin-bottom: 10vh;
     height: 100vh;
 }
@@ -73,21 +61,14 @@ header {
     }
 
     p {
-        font-size: 0.8rem;
-        font-family: variables.$fontFamilyBold;
-        line-height: 1rem;
         padding: 4px 0 0 calc(3vw + 4px);
+        @include mixins.fontStyles (variables.$fontFamilyBold, 0.8rem, 1rem);
     }
 }
 
 #floatingMan {
-    position: absolute;
-    top: 10vh;
-    right: 0;
-    z-index: 1;        
-    object-fit: contain;
-    width: 50vw;
-    height: 80vh;
+    @include mixins.position (absolute, 10vh, auto, 0, auto, 1);
+    @include mixins.imageStyles (50vw, 80vh, contain);
 }
 
 #title {
@@ -104,14 +85,13 @@ header {
 
     a {
         text-decoration: none;
-        color: variables.$accentColor;
+        color: variables.$accentColorPrimary;
         font-family: variables.$fontFamilyBold;
     }
 }
 
 #imageGallery {
-    width: 100%;
-    object-fit: contain;
+    @include mixins.imageStyles (100%, auto, contain);
 }
 
 #ideaSection {
@@ -170,7 +150,7 @@ header {
     }
 }
 
-#readySection, .alignCenter{
+#readySection, .alignCenter{ /* .alignCenter Klasse wird im Footer wieder verwendet */
     text-align: center;
     width: 50vw;
     margin: auto;
@@ -192,8 +172,7 @@ header {
         margin-bottom: 30vh;
 
         .imgTextSectionImg {
-            width: 38vw;
-            object-fit: contain;
+            @include mixins.imageStyles (38vw, auto, contain);
         }
 
         div {
@@ -249,7 +228,7 @@ footer {
     form .submit {
         width: 15vw;
         height: 8vh;
-        background: linear-gradient(90deg, variables.$accentColor, transparent) variables.$accentColor;        
+        background: linear-gradient(90deg, variables.$accentColorPrimary, transparent) variables.$accentColorPrimary;        
         border: none;
         border-radius: 5px;
         color: white;
@@ -258,7 +237,7 @@ footer {
     }
 
     form .submit:hover, form .submit:focus {
-        background-color: #3C30FF;
+        background-color: variables.$accentColorSecondary;
         transition: background-color 1s;
     }
 
@@ -268,10 +247,7 @@ footer {
     }
 
     #credits::after {
-        background-image: url("../img/love.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: right;
+        @include mixins.backgroundImage ("../img/love.png", no-repeat, contain, right);
         display: inline-block;
         content: "";
         width: 30px;
@@ -304,7 +280,7 @@ footer {
     }
 
     a {
-        background-color: #4c0bbc;
+        background-color: variables.$accentColorSecondary;
         padding: 1vh 2vw;
         border-radius: 5px;
         color: white;
